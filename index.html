@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myStyles.css">
+
+    <link rel="shortcut icon" href="Imagenes/original.png" type="image/x-icon">
+    <script defer src="encripted.js"></script>
+    <title>Encriptador</title>
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Encriptador</h1>
+    </header>
+    <img src="./Imagenes/Logo.png" alt="" />
+    <main class="section">
+
+        <form class="myForm">
+
+            <div class="container">
+                <textarea name="texto" placeholder="Escriba su texto aqui" class="center" id="textAreaUser"></textarea>
+                <div class="container">
+                    <img src="./Imagenes/espera.jpg" alt="" id="myLogo" />
+                    <span>Solo letras minúsculas y sin acentos.</span>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="center">
+                <button type="submit" id="btnEncrypted" class="">Encriptar</button>
+                <button type="submit" id="btnDecrypted" class="">Desencriptar</button>
+            </div>
+
+            </article>
+
+        </form>
+
+
+        <article id="encryptedMessage">
+            <div class="center">
+
+                <div class="imgContainer" id="menajito">
+                    <img src="./Imagenes/Muñeco.png" alt="Ningun Mensaje" />
+
+
+                </div>
+                <div class="center" id="foundMessage">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+
+                <div class="center">
+
+                    <button type="submit" id="copy" class="">copiar</button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+    </main>
+
+
+
+    <footer>
+        <div class="copyright">
+            <p> © Yamid Heli Vargas 2022</p>
+            <div class="redes">
+                <a href="https://github.com/yamidvargas " target="_blank "><img class="imgRedes" src="Imagenes/git.png " alt="Github "></a>
+                <a href="https://www.linkedin.com/in/yamid-vargas-9b8a37222/ " target="_blank "><img class="imgRedes " src="Imagenes/link.png " alt="Linkedin "></a>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+</body>
+
+</html>
