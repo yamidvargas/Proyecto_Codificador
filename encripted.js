@@ -54,7 +54,7 @@ function copy() {
     nodoCopy.addEventListener("click", () => {
 
 
-        let content = document.getElementById('menajito').innerText;
+        let content = document.getElementById('codingArea').innerText;
         if (content === "") {
             alert("no hay texto para")
         } else {
@@ -71,9 +71,8 @@ function copy() {
 
 //cambiar texto e imagen en campo de encriptado
 function encryptMessage(cadenaNueva) {
-    let imagenNueva = document.getElementById("mensajeEncontrado")
-    console.log(imagenNueva)
-    let agarrarImagen = document.getElementById("menajito");
+    let imagenNueva = document.getElementById("foundMessage")
+    let agarrarImagen = document.getElementById("codingArea");
     agarrarImagen.innerHTML = `${cadenaNueva} `;
     imagenNueva.innerHTML = `<img  src="Imagenes/encriptador.jpg" id="tamañoImagen" alt="mensaje Encriptado">
                             <h2>mensaje encriptado</h2>`
@@ -83,12 +82,14 @@ function encryptMessage(cadenaNueva) {
 }
 //cambiar imagen y texto en campo de desencriptado
 function decryptedMessage(cadenaNueva) {
-    let imagenNueva = document.getElementById("mensajeEncontrado")
-    let agarrarImagen = document.getElementById("menajito");
+
+    let imagenNueva = document.getElementById("foundMessage")
+    let agarrarImagen = document.getElementById("codingArea");
+
     agarrarImagen.innerHTML = `${cadenaNueva} `;
     imagenNueva.innerHTML = `<img  src="Imagenes/desencriptar.jpeg" id="tamañoImagen" alt="Mensaje Desencriptado">
                             <h2>mensaje desencriptado</h2>`
-    console.log(imagenNueva)
+
 }
 
 
